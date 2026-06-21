@@ -10,6 +10,8 @@
       header { margin-bottom: 1.5rem }
       h1 { margin: 0; font-size: 1.5rem }
       p.lead { color: #444 }
+      .schedule-wrapper { margin-top: 1rem }
+      .pretalx-widget { border: 1px solid #eee; padding: 1rem; border-radius: 6px }
     </style>
   </head>
   <body>
@@ -25,6 +27,21 @@
       </section>
 
       <section>
+        <h2>Schema</h2>
+        <div class="schedule-wrapper">
+          <pretalx-schedule event-url="https://content.fri3d.be/fri3dcamp2024/" locale="nl" format="grid" style="--pretalx-clr-primary: #54B371"></pretalx-schedule>
+          <noscript>
+            <div class="pretalx-widget">
+              <div class="pretalx-widget-info-message">
+                JavaScript is disabled in your browser. To access our schedule without JavaScript,
+                please <a target="_blank" href="https://content.fri3d.be/fri3dcamp2024/schedule/">click here</a>.
+              </div>
+            </div>
+          </noscript>
+        </div>
+      </section>
+
+      <section>
         <h2>Volgende stappen</h2>
         <ul>
           <li>Voeg je schema toe in HTML of link naar een JSON/CSV bestand.</li>
@@ -36,5 +53,7 @@
     <footer style="margin-top:2rem; font-size:0.9rem; color:#666">
       <p>Gemaakt door Fri3dCamp</p>
     </footer>
+
+    <script type="text/javascript" src="https://content.fri3d.be/fri3dcamp2024/schedule/widget/v2.en.js"></script>
   </body>
 </html>
